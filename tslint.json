@@ -1,10 +1,8 @@
 {
-    "extends": "tslint:recommended",
+    "extends": [],
     "rules": {
         "arrow-parens": false,
-        "max-line-length": {
-            "options": [256]
-        },
+        "align": true,
         "no-empty": false,
         "trailing-comma": false,
         "ordered-imports": false,
@@ -26,10 +24,5 @@
             ]
         },
         "object-literal-sort-keys": false
-    },
-    "jsRules": {
-        "max-line-length": {
-            "options": [120]
-        }
     }
   }

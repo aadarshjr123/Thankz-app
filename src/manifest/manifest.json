@@ -1,0 +1,91 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.6",
+  "id": "a013c4a4-0683-4125-8c05-4004c2c3cc6f",
+  "version": "1.0.0",
+  "packageName": "com.example.QThankz",
+  "developer": {
+    "name": "Quadrasystems.net",
+    "websiteUrl": "https://www.quadrasystems.net/",
+    "privacyUrl": "https://www.quadrasystems.net/privacy.html",
+    "termsOfUseUrl": "https://www.quadrasystems.net/tou.html"
+  },
+  "name": {
+    "short": "Quadra Thankz",
+    "full": "Quadra Thankz recognition application"
+  },
+  "description": {
+    "short": "Quadra Thankz app appreciates employees inside organization with accolade batch",
+    "full": "Quadra Thankz app appreciates employees is designed to help boost the productivity by achieving targets on greater heights.The app sends notification to the user by storing the appreciation history for references. In Order to store the details you require SharePoint license which has to be authenticated with your work account. Please contact Quadra Systems Global Services- gsc@quadrasystems.net"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.jpg"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "c62bc0e4-59d1-4f7b-b8a9-0f4d1a3dc936",
+      "name": "Award List",
+      "contentUrl": "https://https://quadrathankz.azurewebsites.net/thankZTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "websiteUrl": "https://https://quadrathankz.azurewebsites.net/thankZTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "83478b60-4418-11eb-8181-eb7904c7b784",
+      "name": "LeaderBoard",
+      "contentUrl": "https://https://quadrathankz.azurewebsites.net/leaderBoard/?name={loginHint}&tenant={tid}&theme={theme}",
+      "websiteUrl": "https://https://quadrathankz.azurewebsites.net/leaderBoard/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "a013c4a4-0683-4125-8c05-4004c2c3cc6f",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "Appreciate",
+              "description": "Appreciate your colleague"
+            },
+            {
+              "title": "Take a tour",
+              "description": "Know our App"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "https://quadrathankz.azurewebsites.net",
+    "login.microsoftonline.com"
+  ],
+  "showLoadingIndicator": true
+}

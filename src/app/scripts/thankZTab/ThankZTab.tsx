@@ -266,7 +266,7 @@ export class ThankZTab extends TeamsBaseComponent<any, any> {
         title: "Add Badges",
         height: 550,
         width: 950,
-        url: "https://3acf-59-92-24-114.ngrok.io/newBadge",
+        url: "https://https://quadrathankz.azurewebsites.net/newBadge",
         completionBotId: process.env.MICROSOFT_APP_ID
       };
       let submitHandler = (err, result) => {

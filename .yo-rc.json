@@ -1,0 +1,11 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Quadrasystems.net",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": false
+    },
+    "libraryName": "thankz",
+    "generator-version": "2.15.0"
+  }
+}
